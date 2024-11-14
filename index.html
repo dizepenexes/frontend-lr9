@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"> </script>
+    <title>Лабораторна робота 9</title>
+</head>
+<body>
+    
+    <div class="block">
+        <h1>Гра «21»</h1>
+        <div class="players">
+            <div class="player">
+                <h2 id="userName">Користувач</h2>
+                <div class="score">
+                    <span>Рахунок:</span>
+                    <div id="userScore" class="score">0</div>
+                </div>
+                <div class="card">
+                    <img id="userCard" src="" alt="Тут буде картка" style="width:100px;">
+                    <div id="userCardValue" class="cardValue">Номінал: 0</div>
+                </div>
+            </div>
+            <div class="player">
+                <h2>Комп'ютер</h2>
+                <div class="score">
+                    <span>Рахунок:</span>
+                    <div id="computerScore" class="score">0</div>
+                </div>
+                <div class="card">
+                    <img id="computerCard" src="" alt="Тут буде картка" style="width:100px;">
+                    <div id="computerCardValue" class="cardValue">Номінал: 0</div>
+                </div>
+            </div>
+        </div>
+        <button id="drawCardButton" onclick="drawCard()">Взяти карту</button>
+        <button id="endGameButton" onclick="endGame()">Закінчити гру</button>
+        <button id="restartGameButton" onclick="restartGame()" style="display:none;">Грати ще раз</button>
+        <h2 style="color: red" id="message"></h2>
+    </div>
+
+</body>
+</html>
